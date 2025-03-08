@@ -1,0 +1,312 @@
+/*Copyright © 2025 Kamenska-Knjiga Group. All rights reserved.*/
+
+body{
+    font-family: "Roboto", serif;
+    background-color:#fff;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    overflow: hidden;
+    }
+
+:root {
+    --Header-Container-Height:15vh;
+    --Header-Font-Size:50px;
+
+    --Open-MenuButton-Height:50px; 
+    --Close-MenuButton-Height:50px;
+
+    --Year-Menu-Elements-Width:20vw;
+    --Menu-Elements-Height:15vh;
+    --Menu-Icons-Height:30px;
+    --Menu-Font-Size:30px;
+
+    --Menu-Element1-Distance: 0vh;
+    --Menu-Element2-Distance: calc(15vh + 1px);
+    --Menu-Element3-Distance: calc(30vh + 2px);
+    --Menu-Element4-Distance: calc(45vh + 3px);
+
+    --Preview-Post-Size-H:20vw; 
+    --Preview-Post-Top-D:150%;
+   
+    --Welcome-Font-Size:55px;
+    --Welcome-Distance:-28%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    :root {
+        --Header-Container-Height:10vh;
+        --Header-Font-Size:27px;
+    
+        --Open-MenuButton-Height:25px;
+        --Close-MenuButton-Height:40px;
+        
+        --Year-Menu-Elements-Width:35vw;
+        --Menu-Elements-Height:10vh;
+        --Menu-Icons-Height:15px;
+        --Menu-Font-Size:15px; 
+       
+        --Menu-Element1-Distance:0vh;
+        --Menu-Element2-Distance:calc(10vh + 1px);
+        --Menu-Element3-Distance:calc(20vh + 2px);
+        --Menu-Element4-Distance:calc(30vh + 3px); 
+
+        --Preview-Post-Size-H:60vw; 
+        --Preview-Post-Top-D:150%;
+
+        --Welcome-Font-Size:35px;
+        --Welcome-Distance:-25%;
+    }
+  }
+
+.Container-Header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    height:var(--Header-Container-Height);
+    background-color:#fff;
+    position:absolute;
+    width:100vw;
+    padding:0px;
+    margin:0px;
+    left:0px;
+    top:0px;     
+    }
+
+.Logo{
+    transform: translateY(-50%);
+    position:absolute;
+    height:calc(75%);
+    cursor:pointer; 
+    left:2%;
+    top:50%;
+    }
+
+.Container-Header > h1{
+    font-size:var(--Header-Font-Size);
+    font-family: "Comic Neue", serif;
+    transform: translateY(-50%);
+    position:absolute;           
+    font-weight:bold;             
+    padding:0px;
+    margin:0px;
+    width:90%;
+    top:50%;
+    }
+
+.OpenMenuButton{
+    height: var(--Open-MenuButton-Height);
+    transform: translateY(-50%);
+    position:absolute;
+    cursor:pointer;
+    z-index:10;
+    right:2%;
+    top:50%;
+    }
+
+.Copyright {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2); 
+    font-size: calc(13px + 0.390625vw); 
+    background-color:#fff;
+    position:absolute;
+    text-align:center;
+    font-weight:light;
+    z-index:10000;
+    padding:5px;
+    width:100vw;
+    margin:0px;
+    bottom:0%;    
+    left:0%;
+    }
+
+.Container-Menu{
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    transition: right 1s ease-in-out;
+    transform: translateY(-50%);
+    color:rgba(0, 0, 0, 1);
+    background-color:#fff;
+    font-weight: bolder;
+    position:absolute;
+    height:100vh;
+    right:-51vw;
+    padding:0px;
+    z-index:100;
+    margin:0px;
+    width:50vw;
+    top:50%;
+    }
+
+.Menu-Elements{
+    border-bottom : 1px solid rgba(0, 0, 0, 0.2);
+    height:var(--Menu-Elements-Height);
+    background-color:#fff;
+    position:absolute;
+    cursor:pointer;
+    padding:0px;
+    margin:0px; 
+    width:100%;
+    z-index:10;
+    left:0%;
+    top:0; 
+    }
+
+.Menu-Elements > h1, .Year-Menu-Elements > h1{
+    transform: translate(-50%, -50%);
+    font-size:var(--Menu-Font-Size);
+    position:absolute;
+    text-align:center;
+    font-weight:bold;
+    opacity:0.5;
+    padding:0px;
+    margin:0px;
+    width:100%;
+    left:50%;
+    top:50%;
+    }
+
+.Menu-Icons{
+    height:var(--Menu-Icons-Height);
+    transform: translateY(-50%);
+    position:absolute;
+    margin-left:5px;
+    padding:0px;
+    top:50%;
+    }    
+
+#Menu-Element-1{
+    top:var(--Menu-Element1-Distance);
+    }
+
+#Menu-Element-2{
+    top:var(--Menu-Element2-Distance); 
+    }
+
+#Menu-Element-3{
+    top:var(--Menu-Element3-Distance);
+    }
+
+#Menu-Element-4{
+    top:var(--Menu-Element4-Distance); 
+    }
+
+.CloseMenuButton {
+    height:var(--Close-MenuButton-Height);
+    width:var(--Close-MenuButton-Height);
+    position:absolute;
+    cursor:pointer;
+    opacity:0.5;
+    z-index:11;
+    padding:0;
+    margin:0;
+    left:0;
+    top:0;
+    }
+
+.CloseMenuButton > img {
+    height:var(--Menu-Icons-Height);
+    position:absolute;
+    text-align:left;
+    margin:6px;
+    z-index:11;
+    left:0;
+    top:0;
+    }
+
+.Container-Preview-Post{
+    height:var(--Preview-Post-Size-H);
+    width:var(--Preview-Post-Size-H);
+    top:var(--Preview-Post-Top-D);   
+    transform:translateX(-50%);
+    position:absolute;
+    padding:0px;
+    margin:0px;
+    left:50%;
+    }
+
+.Preview-Post{
+    height:var(--Preview-Post-Size-H);
+    transform: translateX(-50%);
+    position:absolute;
+    left:50%;
+    top:0px;
+    }
+
+.Shade{
+    transform:translate(-50%, -50%);
+    background-color:#379cf441;
+    position:absolute;
+    border-radius:50%;
+    height:110%;/*65*/
+    width:110%;
+    left:50%;
+    top:50%;
+    }
+
+.Welcome-Text{
+    transition: opacity 0.5s ease-in-out;
+    font-size:var(--Welcome-Font-Size);
+    bottom:var(--Welcome-Distance);
+    font-family: "Kalam", serif;
+    transform:translateX(-50%);
+    position:absolute;
+    text-align:center;
+    font-weight:400;
+    padding:0px;
+    width:100vw;
+    margin:0px;
+    left:50%;
+    }
+
+.Translation-Trigger-Text{
+    transform:translateX(-50%);
+    font-weight:lighter;
+    position:absolute;
+    text-align:center;
+    font-size:5px;
+    color:#fff;
+    padding:0px;
+    width:100vw;
+    margin:0px;
+    bottom:0%;
+    z-index:1;
+    left:50%;
+    }
+
+.Container-Year-Menu{
+    position:absolute;
+    top: calc(var(--Menu-Element4-Distance) - 1px);
+    width:var(--Year-Menu-Elements-Width);
+    transition:right 1s ease-in-out;
+    background-color:#fff;
+    height:calc(100%);
+    padding:0px;
+    right:-35vw; 
+    margin:0px;
+    z-index:1;
+    }
+
+.Year-Menu-Elements{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    height:var(--Menu-Elements-Height);
+    background-color:#fff;
+    position:absolute;
+    cursor:pointer; 
+    width:100%;
+    }
+
+#Year-Menu-2025{
+    display:block;
+    top:0vh;
+    }
+
+#Year-Menu-2026{
+    display:none;
+    top:var(--Menu-Element2-Distance); 
+    }
+#Year-Menu-2027{
+    display:none;
+    top:var(--Menu-Element3-Distance); 
+    }
