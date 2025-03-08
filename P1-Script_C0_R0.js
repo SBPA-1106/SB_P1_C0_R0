@@ -60,11 +60,11 @@ const LogoWidth = Logo.offsetWidth;
 Heading.style.left = `calc(${LogoWidth}px + 4%)`;
 
   const PreviewPosts = [
-    'Example-Images/Example-Image-Round-1.png',
-    'Example-Images/Example-Image-Round-2.png',
-    'Example-Images/Example-Image-Round-3.png',
-    'Example-Images/Example-Image-Round-4.png',
-    'Example-Images/Example-Image-Round-5.png',
+    'https://github.com/SBPA-1106/SB_Example-Posts_C0_G/blob/main/Preview-Post-1.png',
+    'https://github.com/SBPA-1106/SB_Example-Posts_C0_G/blob/main/Preview-Post-2.png',
+    'https://github.com/SBPA-1106/SB_Example-Posts_C0_G/blob/main/Preview-Post-3.png',
+    'https://github.com/SBPA-1106/SB_Example-Posts_C0_G/blob/main/Preview-Post-4.png',
+    'https://github.com/SBPA-1106/SB_Example-Posts_C0_G/blob/main/Preview-Post-5.png',
   ];
   
   let currentImgIndex = 0;
