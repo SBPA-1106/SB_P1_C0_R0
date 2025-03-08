@@ -60,11 +60,11 @@ const LogoWidth = Logo.offsetWidth;
 Heading.style.left = `calc(${LogoWidth}px + 4%)`;
 
   const PreviewPosts = [
-    'https://github.com/SBPA-1106/SB_Example-Posts_C0_G/blob/main/Preview-Post-1.png',
-    'https://github.com/SBPA-1106/SB_Example-Posts_C0_G/blob/main/Preview-Post-2.png',
-    'https://github.com/SBPA-1106/SB_Example-Posts_C0_G/blob/main/Preview-Post-3.png',
-    'https://github.com/SBPA-1106/SB_Example-Posts_C0_G/blob/main/Preview-Post-4.png',
-    'https://github.com/SBPA-1106/SB_Example-Posts_C0_G/blob/main/Preview-Post-5.png',
+    'https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Example-Posts_C0_G@main/Preview-Post-1.png',
+    'https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Example-Posts_C0_G@main/Preview-Post-2.png',
+    'https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Example-Posts_C0_G@main/Preview-Post-3.png',
+    'https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Example-Posts_C0_G@main/Preview-Post-4.png',
+    'https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Example-Posts_C0_G@main/Preview-Post-5.png',
   ];
   
   let currentImgIndex = 0;
