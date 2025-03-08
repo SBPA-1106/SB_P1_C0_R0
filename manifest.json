@@ -1,0 +1,20 @@
+{
+  "name": "Kamenska-Knjiga",
+  "short_name": "Kamenska-Knjiga",
+  "start_url": "https://sbpa-1106.github.io/SB_P1_C0_R0/P1_C0_R0.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Images_C0_G@main/Icon.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Images_C0_G@main/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
