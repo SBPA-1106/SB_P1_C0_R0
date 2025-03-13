@@ -432,7 +432,16 @@
     }
     
     document.addEventListener("DOMContentLoaded", function () {
-    
+    if ("Notification" in window) {
+  Notification.requestPermission().then(permission => {
+    if (permission === "granted") {
+      new Notification("Hallo!", {
+        body: "Das ist eine Test-Benachrichtigung!",
+        icon: "/icon.png"
+      });
+    }
+  });
+}
     const LogoWidth = Logo.offsetWidth;
     
     Heading.style.left = `calc(${LogoWidth}px + 4%)`;
