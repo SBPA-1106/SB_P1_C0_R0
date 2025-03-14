@@ -576,27 +576,6 @@
     const config = { attributes: true, attributeFilter: ['lang'] };
     
     langTagObserver.observe(targetNode, config);
-
-
-    function sendNotification() {
-            if ("Notification" in window) {
-                Notification.requestPermission().then(permission => {
-                    if (permission === "granted") {
-                        new Notification("Hallo!", {
-                            body: "Das ist eine Test-Benachrichtigung!",
-                            icon: "https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Images_C0_G@main/Icon.ico"
-                        });
-                    } else {
-                        console.log("Benachrichtigungen wurden abgelehnt.");
-                    }
-                });
-            } else {
-                alert("Benachrichtigungen werden in diesem Browser nicht unterstützt.");
-            }
-        }
-
-        // Event Listener für Klick auf den Body
-        document.body.addEventListener("click", sendNotification);
   </script>
   
 </body>
